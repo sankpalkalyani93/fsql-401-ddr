@@ -1,0 +1,29 @@
+select ename, sal, sal/26 as "Daily salary" from emp;
+select ename, sal, sal + comm from emp;
+select ename, sal, sal*12 as "Annual Salary" from emp;
+select * from emp where sal > 3000;
+select * from emp where deptno = 10;
+select * from emp where deptno != 20;
+select * from emp where ename = 'BLAKE';
+select * from emp where job = 'SALESMAN' and sal > 1000;
+select * from emp where job in ('SALESMAN', 'CLERK');
+select * from emp where sal <= 1000;
+select * from emp where sal between 2000 and 5000;
+
+select * from emp;
+select * from emp where ename like '%r';
+select * from emp where ename like 's%';
+select * from emp where ename like 'b%e';
+select * from emp where ename like '%r%';
+select * from emp where hiredate like '%28';
+
+select * from emp;
+select * from emp where ename like 'ki__';
+select * from emp where ename like 'w__d';
+select * from emp where ename like '___d';
+select * from emp where hiredate like '%02%__';
+select * from emp where hiredate like '%12%';
+select * from emp where hiredate like '__%12%__';
+select * from emp where hiredate > 1981 or hiredate < 1981;
+select * from emp where hiredate like '1981%';
+select * from emp where hiredate not like '1981%';
